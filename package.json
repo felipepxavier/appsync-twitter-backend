@@ -10,7 +10,7 @@
     "sls": "sls"
   },
   "devDependencies": {
-    "serverless": "^3.24.1"
+    "serverless": "3.24.1"
   },
   "dependencies": {
     "serverless-appsync-plugin": "^1.14.0"
