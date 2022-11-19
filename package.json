@@ -1,0 +1,18 @@
+{
+  "name": "appsync-twitter-backend",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/felipepxavier/appsync-twitter-backend.git",
+  "author": "Felipe Pedroso <felipe.sadler@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sls": "sls"
+  },
+  "devDependencies": {
+    "serverless": "^3.24.1"
+  },
+  "dependencies": {
+    "serverless-appsync-plugin": "^1.14.0"
+  }
+}
