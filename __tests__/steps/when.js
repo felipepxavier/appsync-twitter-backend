@@ -1,4 +1,5 @@
 require('dotenv').config()
+require('dotenv').config({ path: '.env-outputs' })
 
 const we_invoke_confirmUserSignup = async (username, name, email) => {
     const handler = require('../../functions/confirm-user-signup').handler
@@ -6,8 +7,8 @@ const we_invoke_confirmUserSignup = async (username, name, email) => {
     const context = {}
     const event = {
         version: "1",
-        region: process.env.AWS_REGION,
-        userPoolId: process.env.COGNITO_USER_POOL_ID,
+        region: process.env.AwsRegion,
+        userPoolId: process.env.CognitoUserPoolId,
         userName: username,
         triggerSource: "PostConfirmation_ConfirmSignUp",
         request: {

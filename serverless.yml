@@ -6,6 +6,7 @@ plugins:
   - serverless-appsync-plugin
   - serverless-iam-roles-per-function
   - serverless-export-env
+  - serverless-export-outputs
 
 provider:
   name: aws
@@ -21,6 +22,19 @@ package:
     - package.json
 
 custom:
+  export-env:
+    filename: .env
+    overwrite: true
+
+  exportOutputs:
+    include:
+      - AwsRegion
+      - CognitoUserPoolId
+    handler: scripts/env.js
+    output:
+      file: ./.env-outputs
+      format: toml
+
   region: ${opt:region, self:provider.region}
   stage: ${opt:stage, self:provider.stage, "dev"}
   appSync:

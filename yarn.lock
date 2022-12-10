@@ -4169,6 +4169,14 @@ serverless-export-env@^2.2.0:
     cfn-resolver-lib "^1.1.7"
     lodash "^4.17.20"
 
+serverless-export-outputs@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/serverless-export-outputs/-/serverless-export-outputs-1.0.2.tgz#f8242696e3128bdecf740d49567d48d943c01524"
+  integrity sha512-C+z3mdZDIPv/SNlWxIskZqf/7yg0GHs0c9+tGIMaI0yPiqktWl2XWNkpJGja5gWoQrk4niqq4aRM014Wg8EEDw==
+  dependencies:
+    tomlify-j0.4 "^3.0.0"
+    yamljs "^0.3.0"
+
 serverless-iam-roles-per-function@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/serverless-iam-roles-per-function/-/serverless-iam-roles-per-function-3.2.0.tgz#8bb5f68e73f391ac8ff9809b8e7726e5bafba4c4"
@@ -4603,6 +4611,11 @@ token-types@^4.1.1:
   dependencies:
     "@tokenizer/token" "^0.3.0"
     ieee754 "^1.2.1"
+
+tomlify-j0.4@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tomlify-j0.4/-/tomlify-j0.4-3.0.0.tgz#99414d45268c3a3b8bf38be82145b7bba34b7473"
+  integrity sha512-2Ulkc8T7mXJ2l0W476YC/A209PR38Nw8PuaCNtk9uI3t1zzFdGQeWYGQvmj2PZkVvRC/Yoi4xQKMRnWc/N29tQ==
 
 tr46@~0.0.3:
   version "0.0.3"
