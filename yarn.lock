@@ -4160,9 +4160,10 @@ serverless-appsync-plugin@^1.14.0:
     moment "^2.29.1"
     ramda "^0.25.0"
 
-serverless-export-env@arabold/serverless-export-env:
+serverless-export-env@^2.2.0:
   version "2.2.0"
-  resolved "https://codeload.github.com/arabold/serverless-export-env/tar.gz/97b1fec5c9879a2846283438c53731b1bd0da9e5"
+  resolved "https://registry.yarnpkg.com/serverless-export-env/-/serverless-export-env-2.2.0.tgz#513af624674ffd1d0f9ef43dd46c2242ba9395e0"
+  integrity sha512-e47hvTM3KqgnNN9U4q8t0LTEgcVmbkOosn2woWw83nDMA/OtmGqStF3acbJ/yH/6dx8nhmEbqFGj5h7jVKXyRQ==
   dependencies:
     bluebird "^3.7.2"
     cfn-resolver-lib "^1.1.7"
