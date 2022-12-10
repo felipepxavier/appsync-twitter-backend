@@ -7,17 +7,22 @@
   "author": "Felipe Pedroso <felipe.sadler@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "sls": "sls"
+    "sls": "serverless",
+    "exportEnv": "serverless export-env",
+    "integration-test": "jest --verbose ./__tests__/test_cases/integration"
   },
   "devDependencies": {
     "@types/jest": "^29.2.3",
     "aws-sdk": "^2.1267.0",
+    "dotenv": "^16.0.3",
     "jest": "^29.3.1",
     "serverless": "3.24.1",
     "serverless-appsync-plugin": "^1.14.0",
+    "serverless-export-env": "arabold/serverless-export-env",
     "serverless-iam-roles-per-function": "^3.2.0"
   },
   "dependencies": {
-    "chance": "^1.1.9"
+    "chance": "^1.1.9",
+    "sls": "^0.1.0"
   }
 }

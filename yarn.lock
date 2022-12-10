@@ -1335,6 +1335,14 @@ caniuse-lite@^1.0.30001400:
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001436.tgz#22d7cbdbbbb60cdc4ca1030ccd6dea9f5de4848b"
   integrity sha512-ZmWkKsnC2ifEPoWUvSAIGyOYwT+keAaaWPHiQ9DfMqS1t6tfuyFYoWR78TeZtznkEQ64+vGXH9cZrElwR2Mrxg==
 
+cfn-resolver-lib@^1.1.7:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/cfn-resolver-lib/-/cfn-resolver-lib-1.1.8.tgz#b3233b59bf0052cff574f315593326241b151ee5"
+  integrity sha512-kqR83Gt4avHE/3hNlYw9MtPxIRd+CWqLf1PHpcAnbv14dHdQc/oc0WfapMTZaxAzQ+w/EFh1ngw4qb4FlvTLSw==
+  dependencies:
+    lodash "^4.17.15"
+    traverse "^0.6.6"
+
 chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -4152,6 +4160,14 @@ serverless-appsync-plugin@^1.14.0:
     moment "^2.29.1"
     ramda "^0.25.0"
 
+serverless-export-env@arabold/serverless-export-env:
+  version "2.2.0"
+  resolved "https://codeload.github.com/arabold/serverless-export-env/tar.gz/97b1fec5c9879a2846283438c53731b1bd0da9e5"
+  dependencies:
+    bluebird "^3.7.2"
+    cfn-resolver-lib "^1.1.7"
+    lodash "^4.17.20"
+
 serverless-iam-roles-per-function@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/serverless-iam-roles-per-function/-/serverless-iam-roles-per-function-3.2.0.tgz#8bb5f68e73f391ac8ff9809b8e7726e5bafba4c4"
@@ -4284,6 +4300,11 @@ slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
+
+sls@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/sls/-/sls-0.1.0.tgz#4d72a6a8d8c4a3d9e3a979f536930c1204cf1d11"
+  integrity sha512-pfHfrIDQhkkF4+0RepNhOQGc9PcSi5zxKW6+LMR+w4x0duc8SL/xm5aE9t8ZAKbfyoe+UI1CmOocLshq31mVtA==
 
 sort-keys-length@^1.0.0:
   version "1.0.1"
