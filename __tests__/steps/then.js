@@ -1,4 +1,3 @@
-require('dotenv').config()
 const AWS = require('aws-sdk')
 
 const user_exists_in_UsersTable = async (id) => {
