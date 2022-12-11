@@ -30,6 +30,7 @@ custom:
     include:
       - AwsRegion
       - CognitoUserPoolId
+      - WebCognitoUserPoolClientId
     handler: scripts/env.js
     output:
       file: ./.env-outputs
@@ -113,3 +114,5 @@ resources:
       Value: ${self:custom.region}
     CognitoUserPoolId:
       Value: !Ref CognitoUserPool
+    WebCognitoUserPoolClientId:
+      Value: !Ref WebUserPoolClient
