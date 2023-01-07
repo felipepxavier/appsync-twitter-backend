@@ -1,14 +1,12 @@
 const given = require('../../steps/given')
 const when = require('../../steps/when')
 
-
 describe('Given an authenticated user', () => {
     let user
     beforeAll(async () =>{
         user = await given.an_authenticated_user()
     })
 
-    
     it('The user can fetch his profile with getMyProfile', async () => {
         const profile = await when.a_user_calls_getMyProfile(user)
 
@@ -32,8 +30,5 @@ describe('Given an authenticated user', () => {
         const [firstName, lastName] = profile.name.split(' ')
         expect(profile.screenName).toContain(firstName)
         expect(profile.screenName).toContain(lastName)
-        
     })
-    
-    
 })
