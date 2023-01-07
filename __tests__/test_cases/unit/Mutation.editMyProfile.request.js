@@ -60,7 +60,7 @@ describe('Mutation.editMyProfile.request template', () => {
             },
             "condition" : {
                 "expression": "attribute_exists(id)"
-            },
+            }
         })
     })
 })
