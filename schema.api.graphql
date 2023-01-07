@@ -25,7 +25,7 @@ input ProfileInput {
 }
 
 type Mutation {
-  editMyProfile(newProfile: ProfileInput): MyProfile!
+  editMyProfile(newProfile: ProfileInput!): MyProfile!
   tweet(text: String!): Tweet!
   like(tweetId: ID!): Boolean!
   unlike(tweetId: ID!): Boolean!
