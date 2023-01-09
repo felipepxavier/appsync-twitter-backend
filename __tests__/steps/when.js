@@ -72,7 +72,6 @@ const we_invoke_an_appsync_template = (templatePath, context) => {
     return JSON.parse(compiler.render(context))
 }
 
-
 const a_user_calls_getMyProfile = async (user) => {
     const getMyProfile = 
     `query MyQuery {
@@ -134,8 +133,27 @@ const a_user_calls_editMyProfile = async (user, input) => {
     return profile
 }
 
+const we_invoke_getImageUploadUrl = async (username, extension, contentType) => {
+
+    const handler = require('../../functions/get-upload-url').handler
+
+    const context = {}
+    const event = {
+      identity: {
+        username
+      },
+      arguments: {
+        extension,
+        contentType
+      }
+    }
+
+    return await handler(event, context)
+}
+
 module.exports = {
     we_invoke_confirmUserSignup,
+    we_invoke_getImageUploadUrl,
     a_user_signs_up,
     we_invoke_an_appsync_template,
     a_user_calls_getMyProfile,

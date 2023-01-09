@@ -23,7 +23,7 @@ mappingTemplates:
 
 dataSources:
   - type: NONE
-    name: none~
+    name: none
 
   - type: AMAZON_DYNAMODB
     name: usersTable

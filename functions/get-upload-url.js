@@ -18,7 +18,8 @@ module.exports.handler = async (event) => {
     }
 
     const contentType = event.arguments.contentType || 'image/jpeg'
-    if (contentType.startsWith('image/')) {
+    if (!contentType.startsWith('image/')) {
+        console.log(contentType)
         throw new Error('content type should be an image')
     }
 
