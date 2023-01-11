@@ -40,7 +40,7 @@ describe('Given an authenticated user', () => {
         const uploadUrl = await when.a_user_calls_getImageUploadUrl(user, '.png', 'image/png')
         const bucketName = process.env.BUCKET_NAME
 
-        const regex = new RegExp(`https://${bucketName}.s3-accelerate.amazonaws.com/${user.username}/.*\.png\?.*Content-Type='image%2Fpng.*`)
+        const regex = new RegExp(`https://${bucketName}.s3-accelerate.amazonaws.com/${user.username}/.*\.png\?.*Content-Type=image%2Fpng.*`)
         expect(uploadUrl).toMatch(regex)
 
         const filePath = path.join(__dirname, '../../data/logo.png')
