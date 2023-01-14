@@ -169,6 +169,22 @@ const a_user_calls_getImageUploadUrl = async (user, extension, contentType) => {
     return url
 }
 
+const we_invoke_tweet = async (username, text) => {
+    const handler = require('../../functions/tweet').handler
+
+    const context = {}
+    const event = {
+      identity: {
+        username
+      },
+      arguments: {
+        text
+      }
+    }
+
+    return await handler(event, context)
+}
+
 module.exports = {
     we_invoke_confirmUserSignup,
     we_invoke_getImageUploadUrl,
@@ -176,5 +192,6 @@ module.exports = {
     we_invoke_an_appsync_template,
     a_user_calls_getMyProfile,
     a_user_calls_editMyProfile,
-    a_user_calls_getImageUploadUrl
+    a_user_calls_getImageUploadUrl,
+    we_invoke_tweet
 }
