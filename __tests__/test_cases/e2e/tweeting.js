@@ -54,9 +54,8 @@ describe('Given an authenticated user', () => {
             let tweets, nextToken
             beforeAll(async () => {
               const result = await when.a_user_calls_getMyTimeline(user, 25)
-              console.log('RESULT', result)
-            //   tweets = result.tweets
-            //   nextToken = result.nextToken
+              tweets = result.tweets
+              nextToken = result.nextToken
             })
       
             it('He will see the new tweet in the tweets array', () => {
