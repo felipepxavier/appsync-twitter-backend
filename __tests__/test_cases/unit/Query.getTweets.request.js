@@ -13,5 +13,4 @@ describe('Query.getTweets.request template', () => {
         expect(() => when.we_invoke_an_appsync_template(templatePath, context)).toThrowError('max limit is 25')
     })
     
-    
 })
